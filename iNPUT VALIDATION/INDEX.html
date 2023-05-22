@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+
+    <title>INPUT Types</title>
+</head>
+
+<style>
+
+
+    :invalid {color:red;}
+:invalid:focus {background-color: pink;}
+:valid {color: blue;}
+label {border: 1px solid;}
+input {width: 500px; height: 40px; margin: 5px 100px}
+</style>
+<BODY>
+    <button href="https://codepen.io/estelle" > https://codepen.io/estelle</button>
+<h1>Input Types and validation</h1>
+<form method="get">
+<p>Email
+    
+    <input type="email" name="email"></p>
+
+
+  <p>number
+     <input type="number" name="number">
+    </p>
+
+  <p>color
+     <input type="color" name="color">
+    </p>
+  <p>tel 
+    <input type="tel" name="tel">
+</p>
+  <p>url
+     <input type="url" name="url">
+    </p>
+
+  <p>date
+     <input type="date" name="date" step="7" min="2014-09-08">
+    </p>
+
+  <p>time 
+    <input type="time" name="time" min="9:00" max="17:00" step="900">
+</p>
+    <p>
+        <label>week <input type="week" name="week" step=2 min="2014-W30"></label>
+    </p>
+
+  <p>month
+     <input type="month" name="month">
+    </p>
+
+  <p>datetime 
+    <input type="datetime" name="datetime">
+</p>
+
+  <p>datetime-local
+     <input type="datetime-local" name="datetime.local"></p>
+    <p><input type="range">
+    </p>
+
+    <p>checkbox
+        
+        <input type="checkbox">
+
+    <p>radio
+        <input type="radio">
+    <p> submit
+        <input type="submit">
+    </form>
+
+
+    </BODY>
+</html>

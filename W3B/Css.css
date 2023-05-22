@@ -1,0 +1,24 @@
+#css for Boady
+
+body{
+    color: aqua;
+}
+
+p { color: red; }
+code { background-color: #eee; }
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+
+  pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+  }
+  h1{
+    color: rgb(60, 221, 20);
+  }

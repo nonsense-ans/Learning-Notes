@@ -1,0 +1,1 @@
+document.querySelector("#content > article > section:nth-child(10) > div > div > button")

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">https://necolas.github.io/normalize.css/latest/normalize.css
+  <head>
+
+    <script src="https://gist.github.com/margani/8629728.js"></script>
+    <link rel="icon" href="https://free3dicon.com/wp-content/uploads/2022/10/perspective_matte-61-264x264.png" />
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HTML Demo: &lt;address></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!-- ============= CSS ============  --> 
+    <link href="codemirror.css" rel="stylesheet" />
+    <link href="editor-tabbed.css" rel="stylesheet" />
+
+          <!-- ============= JAVASCRIPT ============  --> 
+
+
+           <script src="codemirror.js"></script>
+           <script src="editor-tabbed.js"></script>
+
+
+
+  
+
+  
+  -->
+  
+  <!-- ======================  BODY  ============ BODY  ============= BODY  ==============
+  <body>
+
+   //////////////##############///////////////////
+
+   <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    margin-right: 100px;
+    margin-left: 100px;
+    width="800"
+    height="400"
+    src="https://interactive-examples.mdn.mozilla.net/pages/tabbed/address.html">
+</iframe -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>HTML Demo: &lt;address></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="codemirror.css" rel="stylesheet" />
+    <link href="editor-tabbed.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <a class="top" href="#">Back to top</a>
+    <header class="output-header border-rounded-top">
+      <h4 class="output-heading">HTML Demo: &lt;address></h4>
+      <button id="reset" class="reset" type="button">Reset</button>
+    </header>
+    <noscript>
+      <div id="warning-no-script" class="warning">
+        The interactive example cannot be shown because JavaScript is disabled.
+      </div>
+    </noscript>
+    <div id="warning-mathml-not-supported" class="warning hidden">
+      The interactive example cannot be shown because MathML is not supported by
+      your browser.
+    </div>
+
+    <div
+      id="editor-container"
+      class="editor-container tabbed-standard hidden border-rounded-bottom"
+      
+      
+      data-editor-type="tabbed"
+
+    >
+
+    <!-- #region -->
+      <section id="tab-container" class="tabs">
+        <div class="tab-list" id="tablist" role="tablist">
+
+          <!-- ========= HTML ==  BUTTON ========  -->
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="html-panel"
+            id="html"
+            class="hidden"
+          >
+                              HTML
+                      </button>
+
+   <!-- ========= CSS ==  BUTTON ========  -->
+                      <button
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="css-panel"
+                        id="css"
+                        class="hidden"
+                        tabindex="-1"
+                      ></button>                 CSS
+       </button>
+
+      <!-- ========= JAVA SCRIPT ==  BUTTON ========  -->
+                                <button
+                                  role="tab"
+                                  aria-selected="false"
+                                  aria-controls="js-panel"
+                                  id="js"
+                                  class="hidden"
+                                  tabindex="-1"
+                                >
+                                           JavaScript
+                                                       </button>
+
+                                                            </div>
+
+                <section
+                id="html-panel"
+                tabindex="0"
+                role="tabpanel"
+                aria-labelledby="html"
+                class="hidden"
+                aria-hidden="true"
+              >                                                
+                                          
+                    <!-- ========= HTML CODE EDITOR  ========  -->                       
+                <div id="html-editor">
+                                  <pre><code>&lt;p>Contact the author of this page:&lt;/p>
+
+                                  &lt;address>
+                                    &lt;a href="mailto:jim@rock.com">jim@rock.com&lt;/a>&lt;br>
+                                    &lthr>
+                                    &lt;a href="tel:+13115552368">(311) 555-2368&lt;/a>
+                                  &lt;/address>
+
+                                  ANS RAZA
+                                  </code></pre>
+
+                   </div>
+        </section>
+
+                             <!-- ========= OUTPUT EDITOR  ========  --> 
+        <section
+          id="css-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="css"
+          class="hidden"
+          aria-hidden="true"
+        >
+                 <!-- ========= OUTPUT EDITOR  ========  --> 
+                                                <div id="css-editor">
+                                                  <pre><code>a[href^='mailto']::before {
+                                          content: '📧 ';
+                                      }
+
+                                      a[href^='tel']::before {
+                                          content: '📞 ';
+                                      }
+                                      ANS RAZA
+                                      </code></pre>
+                                                </div>
+        </section>
+
+
+        <section
+         id="js-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="js"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="js-editor">
+            <pre><code>
+               a[href^='tel']
+            </code></pre>
+          </div>
+        </section>
+      </section>
+
+
+                <!-- ========= OUTPUT BUTTON ========  --> 
+
+                        <div id="output" class="output-container">
+                          <h4 class="output-label">Output</h4>
+                          <iframe id="output-iframe"></iframe>
+                        </div>
+    </div>
+                  <!-- ========= CONSOLE OUTPUT ========  --> 
+    <section
+      class="console-container hidden"
+      aria-hidden="true"
+    >
+      <h4 class="console-label">Console Output</h4>
+      
+         <!-- ========= CONSOLE OUTPUT ========  --> 
+      <button type="button" id="clear" class="clear">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 877.714 1024"
+          class="icon-clear"
+        >
+          <path
+            class="path0"
+            fill="currentColor"
+            d="M749.714 510.286c0-62.286-18.286-120-49.714-168.571L269.143 772.001c49.143 32 107.429 50.857 169.714 50.857 171.429 0 310.857-140 310.857-312.571zM178.857 681.143l431.429-430.857c-49.143-33.143-108-52-171.429-52-171.429 0-310.857 140-310.857 312 0 63.429 18.857 121.714 50.857 170.857zm698.857-170.857c0 243.429-196.571 440.571-438.857 440.571S0 753.714 0 510.286c0-242.857 196.571-440 438.857-440s438.857 197.143 438.857 440z"
+          />
+        </svg>
+        clear console
+      </button>
+      <div id="console" class="console"><code></code></div>
+    </section>
+
+
+ <!-- ========= TEST ========  --> 
+ <ul>
+  <li><span class="hello1">1</span></li>
+  <li><span class="hello2">2</span></li>
+  <li><span class="hello3">3</span></li>
+</ul>
+button>hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <template id="output-head">
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="../../css/editor-tabbed.css?v=ae1feb6" rel="stylesheet" />
+      <style>
+         </style>
+      <style id="css-output">
+        %css-content%
+      </style>
+    </template>
+    <template id="output-body">
+
+      
+      <div id="html-output" class="output editor-tabbed">
+        %html-content%
+      </div>
+
+      <script>
+        function executeExample() {
+          'use script';
+          try {
+          %js-content%
+          } catch(e) {
+            console.error(e);
+          }
+        }
+      </script>
+    </template>
+                                      
+    <script src="codemirror.js"></script>
+    <script src="editor-tabbed.js"></script>
+
+
+    <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+
+    <hr> <hr>
+
+   
+
+
+    <footer>
+        <p>© 2023 socialist 2.0</p>
+    </footer>
+  </body>
+</html>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-261516-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-261516-1');
+    </script> -->

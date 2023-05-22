@@ -1,0 +1,36 @@
+element.style {
+}
+.codeblock-buttons {
+    display: block;
+    position: relative;
+    overflow: visible;
+}
+code, pre {
+    font-family: Consolas,Menlo,Monaco,"Lucida Console","Liberation Mono","DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace;
+}
+pre {
+    font-family: monospace,monospace;
+    font-size: 1em;
+}
+user agent stylesheet
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+.cooked, .d-editor-preview {
+    word-wrap: break-word;
+    line-height: var(--line-height-large);
+}
+.posts-wrapper {
+    position: relative;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+[class*=archetype-] {
+    --below-topic-margin: 0.75em;
+}
+style attribute {
+    --header-offset: 0px;
+    --header-top: 38px;
+}

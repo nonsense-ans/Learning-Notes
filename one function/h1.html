@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link href="cs.css" rel="stylesheet" />
+  <link href="https://necolas.github.io/normalize.css/latest/normalize.css  rel="stylesheet" />
+  <link href="https://necolas.github.io/normalize.css/latest/normalize.css  rel="stylesheet" />
+</head>
+<body>
+
+
+    <button type="button" class="icon copy-icon"><span class="visually-hidden">Copy to Clipboard</span></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--====================================                                     ====================-->
+    <pre class="codeblock-buttons">
+
+        <div class="codeblock-button-wrapper"
+             style="right: 0px;">
+
+         <button class="btn nohighlight copy-cmd" 
+                aria-label="copy code to clipboard">
+
+                     <svg class="fa d-icon d-icon-copy svg-icon svg-string" 
+                            xmlns="http://www.w3.org/2000/svg"  >
+                        <use href="#copy"></use>
+                    </svg>
+            </button>
+        </div>
+        <code>
+             &lt;a href="#" id="first" class="toggler"&gt;Closer One&lt;/a&gt;
+        &lt;a href="#" id="second" class="toggler"&gt;Closer Two&lt;/a&gt;
+       </code>
+    
+    </pre>
+</body>
+</html>
+
+
+////////////////////////=================https://github.com/feross/clipboard-copy/blob/master/test.html=========////////
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>clipboard-copy test</title>
+</head>
+<body>
+  <p>
+    1. Click this button: <button>Copy</button>
+  </p>
+
+  <p>
+    2. Paste into this input: <input />
+  </p>
+
+  <p>
+    3. Test status: <strong>pending</strong>
+  </p>
+
+  <script type="text/javascript">
+    window.module = {}
+  </script>
+  <script src="index.js"></script>
+  <script type="text/javascript">
+    var secret = Math.random().toFixed(10).slice(2)
+
+    function setStatus (success) {
+      document.querySelector('strong').style.color = (success ? 'green' : 'red')
+      document.querySelector('strong').textContent = (success ? 'passed' : 'failed')
+    }
+
+    document.querySelector('button').addEventListener('click', function () {
+      if (!window.module.exports(secret)) setStatus(false)
+    })
+
+    document.querySelector('input').addEventListener('input', function (ev) {
+      setStatus(ev.target.value === secret)
+    })
+  </script>
+</body>
+</html>
